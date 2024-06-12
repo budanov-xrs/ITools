@@ -1,0 +1,5 @@
+C:\Users\ss_six\RiderProjects\IToolS.IOServers.BandR\obj\Debug\IToolS.IOServers.BandR.csproj.AssemblyReference.cache
+C:\Users\ss_six\RiderProjects\IToolS.IOServers.BandR\obj\Debug\IToolS.IOServers.BandR.CpuParametersEditorDialog.resources
+C:\Users\ss_six\RiderProjects\IToolS.IOServers.BandR\obj\Debug\IToolS.IOServers.BandR.DeviceParametersEditorDialog.resources
+C:\Users\ss_six\RiderProjects\IToolS.IOServers.BandR\obj\Debug\IToolS.IOServers.BandR.csproj.GenerateResource.cache
+C:\Users\ss_six\RiderProjects\IToolS.IOServers.BandR\obj\Debug\IToolS.IOServers.BandR.csproj.CoreCompileInputs.cache

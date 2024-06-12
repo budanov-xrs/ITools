@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--Project was exported from assembly: C:\Users\ss_six\Desktop\FXE\FXE software integration package\COMET_FXE-PVIServices_Example\Pluto-PVI-trial_01\packages\IToolS.BandR.3.5.58\lib\net20\IToolS.IOServers.BandR.dll-->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3FFF7925-3157-4890-B904-06600CF91464}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AssemblyName>IToolS.IOServers.BandR</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <ApplicationVersion>3.5.58.1</ApplicationVersion>
+    <FileAlignment>512</FileAlignment>
+    <RootNamespace>IToolS.IOServers.BandR</RootNamespace>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BR.AN.PVIServices">
+      <HintPath>lib\BR.AN.PVIServices.dll</HintPath>
+    </Reference>
+    <Reference Include="IToolS, Version=3.5.58.1, Culture=neutral, PublicKeyToken=2b2cb70e99c96fcf, processorArchitecture=MSIL">
+      <HintPath>packages\IToolS.3.5.58\lib\net20\IToolS.dll</HintPath>
+    </Reference>
+    <Reference Include="IToolS.Data, Version=3.5.58.1, Culture=neutral, PublicKeyToken=2b2cb70e99c96fcf, processorArchitecture=MSIL">
+      <HintPath>packages\IToolS.3.5.58\lib\net20\IToolS.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DotfuscatorAttribute.cs" />
+    <Compile Include="hj.cs" />
+    <Compile Include="DeviceParametersEditorDialog.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CpuParametersEditorDialog.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PVI.cs" />
+    <Compile Include="DeviceParametersConverter.cs" />
+    <Compile Include="CpuParametersConverter.cs" />
+    <Compile Include="RoutingParametersConverter.cs" />
+    <Compile Include="DeviceParametersEditor.cs" />
+    <Compile Include="CpuParametersEditor.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="CpuParametersEditorDialog.resx" />
+    <EmbeddedResource Include="DeviceParametersEditorDialog.resx" />
+    <EmbeddedResource Include="PviCom.dll" />
+    <EmbeddedResource Include="PviCom64.dll" />
+    <EmbeddedResource Include="PviLog.dll" />
+    <EmbeddedResource Include="PviLog64.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
